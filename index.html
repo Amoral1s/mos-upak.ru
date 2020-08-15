@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" id="myViewport" content="width=578, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>New project</title>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="" />
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  
+  <script>
+    window.onload = function () {
+      if (screen.width < 579) {
+          var mvp = document.getElementById('myViewport');
+          mvp.setAttribute('content','width=578, maximum-scale=1.0, user-scalable=no');
+      }
+    }
+    window.onresize = function() {
+    var mvp = document.getElementById('myViewport');
+    if (screen.width < 579) {
+          mvp.setAttribute('content','width=578, maximum-scale=1.0, user-scalable=no');
+      } else {
+       mvp.setAttribute('content','width=device-width, maximum-scale=1.0, user-scalable=no');
+    }
+    }
+    </script>
+</head>
+<body>
+  <div class="burger">
+    <div class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <header class="header">
+    <nav class="header-nav">
+      <ul class="container">
+        <li><a href="">Главная</a></li>
+        <li><a href="">О нас</a></li>
+        <li><a href="">Наши преимущества</a></li>
+        <li><a href="">Каталог</a></li>
+        <li><a href="">О продукции</a></li>
+        <li><a href="">Цены</a></li>
+        <li><a href="">Как мы работаем</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-info container">
+      <div><a href="/"><img src="img/logo.png" alt="Mos-upak.ru"></a></div>
+      <div>
+        <img src="img/icons/map.png" alt="map">
+        <p>
+          г. Москва Федеративный <br>
+          проспект д. 9 корпус 2
+        </p>
+      </div>
+      <div>
+        <img src="img/icons/clock.png" alt="map">
+        <p>
+          пн - пт: с 09:00 до 18:00 <br>
+          сб и вс: выходной
+        </p>
+      </div>
+      
+      <div>
+        <img src="img/icons/mail.png" alt="map">
+        <a href="mailto:nata_ch1979@mail.ru">
+          nata_ch1979@mail.ru
+        </a>
+      </div>
+      <div>
+        <img src="img/icons/phone.png" alt="map">
+        <article>
+          <a href="tel:+7 (495) 774-23-29">
+            +7 (495) 774-23-29
+          </a>
+          <span class="callback">
+            Заказать звонок
+          </span>
+        </article>
+      </div>
+    </div>
+    <main class="header-title container">
+      <h1>
+        Производство и продажа
+        полиэтиленовой плёнки
+      </h1>
+      <p>
+        Наша компания несколько лет специализируется на
+        выпуске пленки, упаковки из полиэтилена.
+      </p>
+    </main>
+    <div class="header-features container">
+      <div class="header-features-item">
+        <img src="img/icons/shield.png" alt="">
+        <div>
+          <h2>Индивидуальный подход</h2>
+          <p>
+            Индивидуальный подход к каждому
+            клиенту и его требованиям
+          </p>
+        </div>
+      </div>
+      <div class="header-features-item">
+        <img src="img/icons/clock-head.png" alt="">
+        <div>
+          <h2>Сроки производства</h2>
+          <p>
+            Двойной контроль за cроками
+            изготовления продукции
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header-button container">
+      <div class="header-button-item">
+        <p>
+          Получите прайс по всем
+          пленкам прямо сейчас
+        </p>
+      </div>
+      <div class="header-button-item">
+        <div class="button">
+          Получить прайс-лист
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="catalog container">
+    <h2 class="title">
+      Наш каталог
+    </h2>
+    <div class="catalog-wrap">
+      <div class="catalog-wrap-item" style="background-image: url(../img/catalog/1.jpg)">
+        <h2>Полипропиленовые
+          пакеты</h2>
+        <ul>
+          <li>ПП пакет с клапаном</li>
+          <li>ПП пакет с клапаном и скотчем</li>
+          <li>ПП пакет с еврослотом и клапаном
+            со скотчем</li>
+          <li>ПП пакет с донной складкой</li>
+          <li>ПП без клапана - "фасовочные"
+            пакеты</li>
+          <li>ПП пакет "обложка"</li>
+        </ul>
+        <a href="" class="button">
+          Подробнее
+        </a>
+      </div>
+      
+      <div class="catalog-wrap-item" style="background-image: url(../img/catalog/2.jpg)">
+        <h2>Полиэтиленовые
+          пакеты</h2>
+        <ul>
+          <li>Полиэтиленовые пакеты майка</li>
+          <li>Полиэтиленовый пакет с
+            прорубной ручкой</li>
+          <li>Пакеты майка с логотипом</li>
+          <li>ПП пакет с донной складкой</li>
+          <li>Полиэтиленовый пакет "фасовочный"
+            с круглым дном</li>
+          <li>Полиэтиленовый пакет "фасовочный"</li>
+          <li>Полиэтиленовый пакет с петлевой
+            ручкой</li>
+        </ul>
+        <a href="" class="button">
+          Подробнее
+        </a>
+      </div>
+      
+      <div class="catalog-wrap-item" style="background-image: url(../img/catalog/3.jpg)">
+        <h2>Упаковочная
+          пленка</h2>
+        <ul>
+          <li>Упаковочная пленка для хлеба</li>
+          <li>Упаковочная пленка для масло</li>
+          <li>Упаковочная пленка для
+            замороженных продуктов</li>
+          <li>Упаковочная пленка овощей
+            и фруктов</li>
+          <li>Упаковочная пленка круп</li>
+        </ul>
+        <a href="" class="button">
+          Подробнее
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  <section class="features container">
+    <h2 class="title">
+      Почему стоит заказывать у нас?
+    </h2>
+    <div class="features-wrap">
+      <div class="features-wrap-left">
+        <div class="features-wrap-left-item">
+          <img src="img/icons/shield.png" alt="">
+          <div>
+            <h3>
+              Индивидуальный
+              подход
+            </h3>
+            <p>
+              Индивидуальный подход к каждому
+              клиенту и его требованиям
+            </p>
+          </div>
+        </div>
+        <div class="features-wrap-left-item">
+          <img src="img/icons/clock-head.png" alt="">
+          <div>
+            <h3>
+              Сроки
+              производства
+            </h3>
+            <p>
+              Двойной контроль за cроками
+              изготовления продукции
+            </p>
+          </div>
+        </div>
+        <div class="features-wrap-left-item">
+          <img src="img/icons/company.png" alt="">
+          <div>
+            <h3>
+              Выгодная
+              логистика
+            </h3>
+            <p>
+              Офис и склад располагаются в
+              одном месте для вашего удобства
+            </p>
+          </div>
+        </div>
+        <div class="features-wrap-left-item">
+          <img src="img/icons/logobr.png" alt="">
+          <div>
+            <h3>
+              Обслуживание
+              заявок
+            </h3>
+            <p>
+              Изготовливаем продукцию с
+              Вашим логотипом и по
+              индивидуальному дизайну
+            </p>
+          </div>
+        </div>
+        <div class="features-wrap-left-item">
+          <img src="img/icons/money.png" alt="">
+          <div>
+            <h3>
+              Взаимовыгодное 
+              сотрудничество
+            </h3>
+            <p>
+              Cтабильные цены и гарантия
+              качества продукции
+            </p>
+          </div>
+        </div>
+        <div class="features-wrap-left-item">
+          <img src="img/icons/truck_gr.png" alt="">
+          <div>
+            <h3>
+              Условия
+              доставки
+            </h3>
+            <p>
+              Доставка товара по Москве
+              и МО, доставка в регионы РФ
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="features-wrap-right">
+          <h3>
+            Бесплатная консультация
+          </h3>
+          <form action="">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="+7 (___) ___-__-__">
+            
+            <input type="submit" value="Отправить" class="button">
+            <small>
+              Отправляя заявку, вы соглашаетесь с <a target="blank" href="/privacy-policy/">Политикой конфиденциальности сайта</a>
+            </small>
+          </form>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about-left">
+      <div class="about-left-wrap">
+        <h2 class="title">
+          О нашей организации
+        </h2>
+        <p>
+          Наша организация работает на российском рынке с 2006 года. 
+          Мы производим широкую линейку пакетов всех популярных
+          разновидностей и размеров из полипропилена и полиэтилена,
+          а так же сопутствующую продукцию.
+        </p>
+        <p>
+          Для наших клиентов всегда в наличии широкий ассортимент
+          готовых изделий, включающий в себя востребованные на рынке
+          виды упаковки и готовые к отгрузке. Мы изготавливаем под заказ
+          пакеты с логотипом от производителя.
+        </p>
+        <p>
+          Посетите наш Каталог, где вы сможете ознакомиться с товарами
+          предлагаемыми нами к реализации. В случае, если Вам сложно
+          найти необходимую для Вас продукцию, наши менеджеры по
+          контактным телефонам готовы всегда оказать помощь. Мы гарантируем
+          индивидуальный подход к каждому клиенту при производстве пакетов.
+        </p>
+        <p>
+          Вам нужны качественные пакеты по самой выгодной цене?
+        </p>
+        <p>
+          Наши товары удовлетворят все Ваши потребности!
+        </p>
+      </div>
+    </div>
+    <div class="about-right">
+
+    </div>
+  </section>
+  <section class="services container">
+    <h2 class="title">
+      Наши услуги
+    </h2>
+    <div class="services-wrap">
+
+      <div class="services-wrap-item">
+        <div class="services-wrap-item-left">
+          <img src="img/services/1.jpg" alt="">
+        </div>
+        <div class="services-wrap-item-right">
+          <h3>
+            Производство полипропиленовых
+            пакетов
+          </h3>
+          <p>
+            Производители стали использовать пакеты в рекламных целях после того, как пакеты стали популярны среди широких слоев населения. В настоящее время пакеты это часть торгового имиджа компаний, фирм, брендов. 
+          </p>
+          <p>
+            Они активно используются в пиар-акциях, в рекламе и в корпоративных мероприятиях. Качество полимерных материалов и грамотный дизайн важнейшая составляющая изготовления пакетов. Продукция компании «МОС-УПАК» отвечает всем этим требованиям.
+          </p>
+          <p>
+            Продукция компании «МОС-УПАК» отвечает всем этим требованиям.Производство пакетов это основное направление деятельности нашей компании.
+          </p>
+          <a href="#" class="button">Подробнее</a>
+        </div>
+      </div>
+      
+      <div class="services-wrap-item">
+        <div class="services-wrap-item-left">
+          <h3>
+            Пакеты из полипропилена
+          </h3>
+          <p>
+            Полипропилен - наиболее прочный материал среди всех используемых для производства пластиковых пакетов. Пакеты, изготовленные из полипропилена имеют: высокую прозрачность, блеск, прочные сварные швы и обладают стойкостью к механическим повреждениям. 
+          </p>
+          <p>
+            Продукции из пропилена свойственна высокоя эластичность. Гладкая поверхность полипропилена обеспечивает нанесение качественной печати изображений. Плотность пакетов из ПП варьируется в пределах - от 20 до 100 мкм, редко, но производят более плотные.
+          </p>
+          <p>
+            Продукции из пропилена свойственна высокоя эластичность. Гладкая поверхность полипропилена обеспечивает нанесение качественной печати изображений. Плотность пакетов из ПП варьируется в пределах - от 20 до 100 мкм, редко, но производят более плотные.
+          </p>
+          <a href="#" class="button">Подробнее</a>
+        </div>
+        <div class="services-wrap-item-right">
+          <img src="img/services/2.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="services-wrap-item">
+        <div class="services-wrap-item-left">
+          <img src="img/services/3.jpg" alt="">
+        </div>
+        <div class="services-wrap-item-right">
+          <h3>
+            Пакеты из полиэтилена
+          </h3>
+          <p>
+            Производители стали использовать пакеты в рекламных целях после того, как пакеты стали популярны среди широких слоев населения. В настоящее время пакеты это часть торгового имиджа компаний, фирм, брендов. 
+          </p>
+          <p>
+            Они активно используются в пиар-акциях, в рекламе и в корпоративных мероприятиях. Качество полимерных материалов и грамотный дизайн важнейшая составляющая изготовления пакетов. Продукция компании «МОС-УПАК» отвечает всем этим требованиям.
+          </p>
+          <p>
+            Производство пакетов это основное направление деятельности нашей компании. 
+            Грамотный дизайн важнейшая составляющая изготовления пакетов. Продукция компании «МОС-УПАК» отвечает всем этим требованиям.
+          </p>
+          <a href="#" class="button">Подробнее</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <section class="price">
+    <div class="price-wrap container">
+      <div>
+        <h2>
+          Скачайте прайс-лист
+        </h2>
+        <p>
+          Получите каталог с актуальными ценами
+          и характеристиками нашей продукции
+        </p>
+        <span class="button callback">Скачать прайс-лист</span>
+      </div>
+    </div>
+  </section>
+  <section class="sertif container">
+    <h2 class="title">
+      Вся наша продукция сертифицирована
+    </h2>
+    <div class="sertif-wrap">
+      <img src="img/sertif/1.jpg" alt="">
+      <img src="img/sertif/1.jpg" alt="">
+      <img src="img/sertif/1.jpg" alt="">
+      <img src="img/sertif/1.jpg" alt="">
+      <img src="img/sertif/1.jpg" alt="">
+    </div>
+  </section>
+  <section class="algo container">
+    <h2 class="title">
+      Наш алгоритм работы с клиентами
+    </h2>
+    <div class="algo-wrap">
+      <div class="algo-wrap-item">
+        <div>
+          <img src="img/alogritm/1.png" alt="">
+        <h3>Заявка / Звонок</h3>
+        <p>Сайт рыбатекст поможет дизайнеру,
+          верстальщику, вебмастеру
+          сгенерироватьнесколько абзацев
+          более менее осмысленного</p>
+        </div>
+      </div>
+      <div class="algo-wrap-item">
+        <div>
+          <img src="img/alogritm/2.png" alt="">
+        <h3>Оформление заказа</h3>
+        <p>Сайт рыбатекст поможет дизайнеру,
+          верстальщику, вебмастеру
+          сгенерироватьнесколько абзацев
+          более менее осмысленного</p>
+        </div>
+      </div>
+      <div class="algo-wrap-item">
+        <div>
+          <img src="img/alogritm/3.png" alt="">
+        <h3>Оплата счета</h3>
+        <p>Сайт рыбатекст поможет дизайнеру,
+          верстальщику, вебмастеру
+          сгенерироватьнесколько абзацев
+          более менее осмысленного</p>
+        </div>
+      </div>
+      <div class="algo-wrap-item">
+       <div>
+        <img src="img/alogritm/4.png" alt="">
+        <h3>Производство</h3>
+        <p>Сайт рыбатекст поможет дизайнеру,
+          верстальщику, вебмастеру
+          сгенерироватьнесколько абзацев
+          более менее осмысленного</p>
+       </div>
+      </div>
+      <div class="algo-wrap-item">
+        <div>
+          <img src="img/alogritm/5.png" alt="">
+        <h3>Отгрузка, доставка</h3>
+        <p>Сайт рыбатекст поможет дизайнеру,
+          верстальщику, вебмастеру
+          сгенерироватьнесколько абзацев
+          более менее осмысленного</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-text container">
+    <h2 class="title">
+      Печать на пакетах. Печать пакетов с
+      логотипом вашей фирмы.
+    </h2>
+    <div class="footer-text-wrap">
+      <p>
+        Изготовление пакетов с логотипом заказчика - это тщательный и деликатный процесс производства. Вместе с заказчиком мы согласовываем и утверждаем материал для пакета, макет логотипа.
+      </p>
+      <p>
+        В нашем ассортименте огромное разнообразие вариантов оформления. В кратчайшее время мы разработаем макет рисунка, надписи и осуществим печать на пакетах. Мы готовы изготовить для вас пакеты с ручками на заказ, по индивидуальным эскизам. Вы можете заказать пакеты из нашей коллекции — для упаковки хлебобулочных продуктов, для упаковки мясных полуфабрикатов и мяса птиц. Производство, изготовление, а также печать на пакетах происходят на нашем производстве в Москве. 
+      </p>
+      <p>
+        Строгое соблюдение утвержденных сроков на производство упаковки конкурентное преимущество нашей организации, заказчик гарантированно и в срок получит свой заказ, при этом быстрота исполнения не влияет на качество товара. Мы гарантируем качество своей продукции - полиэтиленовые и пропиленовые пакеты с логотипом.
+      </p>
+      <p>
+        На странице Услуги, подробное описание деятельности нашей компании и указаны сроки на осуществление печати пакетов с логотипами.
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    
+    <div class="footer-wrap container">
+      <h2>
+        Контакты
+      </h2>
+      <div class="footer-wrap-wrapper">
+        <div class="footer-wrap-wrapper-item">
+          <p>
+            Адрес офиса и с клада: Москва,
+          Федеративный проспект,
+          д.9 корпус 2.
+          </p>
+        </div>
+        <div class="footer-wrap-wrapper-item">
+          <p>
+            Мобильный телефон:
+          </p>
+          <a href="tel:+7 (903) 597-81-89" target="blank">+7 (903) 597-81-89</a>
+        </div>
+        <div class="footer-wrap-wrapper-item">
+          <p>
+            Контактный телефон / Факс:
+          </p>
+          <a href="tel:+7 (495) 774-23-29" target="blank">+7 (495) 774-23-29</a>
+        </div>
+        <div class="footer-wrap-wrapper-item">
+          <p>
+            Электронная почта:
+          </p>
+          <a href="mailto:nata_ch1979@mail.ru" target="blank">nata_ch1979@mail.ru</a>
+        </div>
+      </div>
+    </div>
+    <iframe src="" data="https://yandex.ru/map-widget/v1/?um=constructor%3A49dbad0f80d1fb9452860e45fc4e198c03f5675d06f833684bef6d6f249b421a&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

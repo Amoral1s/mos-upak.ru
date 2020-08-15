@@ -1,0 +1,566 @@
+@import "reset"
+.title
+	font-size: 40px
+	line-height: 110%
+	text-align: left
+	font-weight: 900
+	font-family: $font
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #000000
+	height: 50px
+	width: 200px
+	background-color: $light
+	background-image: linear-gradient(to top, #ffbe31 0%, #fff54a 100%)
+	border-radius: 10px
+	box-shadow: 0 4px 0 #cf9c1c
+	transition: 0.3s
+	cursor: pointer
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 18px
+	&:hover
+		background-color: $main
+		background-image: linear-gradient(to top, $main 0%, $main 100%)
+		color: #ffffff
+		box-shadow: 0 4px 0 rgba(#fff, .2)
+
+.header
+	background-image: url(../img/header.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center 
+	padding-bottom: 60px
+	position: relative
+	padding-top: 60px
+	&-button
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 50px
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 50%
+			&:first-child
+				justify-content: flex-end
+			&:last-child
+				justify-content: flex-start
+			p
+				color: #ffffff
+				font-weight: 600
+				font-size: 22px
+				max-width: 310px
+				line-height: 110%	
+				display: block
+				text-align: end
+				padding-right: 20px
+			.button
+				height: 82px
+				width: 314px
+				margin-left: 50px
+	&-features
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-top: 50px
+		&-item
+			background-color: #fff
+			border-radius: 10px	
+			padding: 30px 45px
+			display: flex
+			justify-content: center
+			align-items: center
+			h2
+				font-size: 22px
+				font-weight: 700
+				display: block
+				margin-bottom: 12px
+			p
+				font-size: 18px
+				font-weight: 600
+			img
+				display: block
+				margin-right: 25px
+			&:first-child
+				margin-right: 30px
+			&:last-child
+				margin-left: 30px
+	&-title
+		padding-top: 35px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		h1
+			font-weight: 900
+			color: #ffffff
+			font-size: 80px
+			line-height: 100%
+			text-align: center
+		p
+			text-align: center
+			font-size: 24px
+			line-height: 28px
+			color: #ffffff
+			max-width: 600px
+			margin-top: 30px
+	&-info
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 15px
+		padding-bottom: 15px
+		div
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-right: 20px
+			article
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				span
+					color: $light
+					font-weight: 600
+					font-size: 14px
+					display: flex
+					position: relative
+					width: max-content
+					&:after
+						position: absolute
+						content: ''
+						height: 1px
+						width: 100%
+						background-color: $light
+						bottom: 0
+						left: 50%
+						transform: translateX(-50%)
+						transition: 0.3s
+			p
+				color: #ffffff
+				display: block
+				font-size: 13px
+				padding-left: 15px
+			a
+				color: #ffffff
+				padding-left: 15px
+				font-size: 14px
+				font-weight: 600
+				transition: 0.3s
+				&:hover
+					transition: 0.3s
+					color: $light
+				img
+					max-width: 100%
+					height: 25px
+					width: 25px
+			a:first-child
+				img
+					width: auto
+					height: auto
+		div:last-child
+			padding-right: 0
+			align-items: flex-start
+			justify-content: flex-end
+			article
+				a
+					font-size: 17px
+				span
+					font-size: 15px
+					padding-top: 5px
+					cursor: pointer
+					transition: 0.3s
+					&:hover
+						color: #ffffff
+						transition: 0.3s
+		div:first-child
+			justify-content: flex-start
+			a
+				padding-left: 0
+	&-nav
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: rgba(#27389e, .2)
+		position: fixed
+		top: 0
+		left: 0
+		transition: 0.6s
+		width: 100%
+		z-index: 50
+		ul
+			display: flex
+			justify-content: space-between
+			padding-top: 15px
+			padding-bottom: 15px
+			align-items: center
+			max-width: 1170px
+			width: 100%
+			li:first-child
+				margin-left: 0
+			li:last-child
+				margin-right: 0
+			li
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 0 15px
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					font-weight: 600
+					color: #ffffff
+					transition: 0.3s
+					font-size: 20px
+					position: relative
+					&:after
+						position: absolute
+						content: ''
+						height: 1px
+						width: 0%
+						background-color: $light
+						bottom: 0
+						left: 50%
+						transform: translateX(-50%)
+						transition: 0.3s
+					&:hover
+						transition: 0.3s
+						color: $light
+						&:after
+							width: 100%
+		&-active
+			background-color: rgba(#27389e, .9)
+
+.catalog
+	.title
+		text-align: center
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		&-item
+			display: flex
+			flex-direction: column
+			padding: 30px
+			border-radius: 10px
+			background-color: $main
+			width: 32%
+			margin-top: 50px
+			min-height: 500px
+			position: relative
+			padding-bottom: 100px
+			background-size: 120%
+			background-position: center
+			background-repeat: no-repeat
+			transition: 0.3s
+			&:hover
+				transition: 0.3s
+				background-size: 150%
+			h2
+				color: #ffffff
+				font-weight: 700
+				font-size: 30px
+				line-height: 110%
+				margin-bottom: 20px
+			ul
+				li
+					color: #ffffff
+					font-size: 15px
+					display: block
+					padding: 7px 0
+					padding-left: 20px
+					position: relative
+					&:after
+						position: absolute
+						content: ''
+						height: 10px
+						width: 10px
+						background-color: #e6ae1f
+						top: 50%
+						left: 0
+						transform: translateY(-50%)
+						border-radius: 100%
+			a.button
+				position: absolute
+				bottom: 40px
+				right: 40px
+
+.features
+	&-wrap
+		margin-top: 50px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		&-left
+			display: flex
+			flex-wrap: wrap
+			width: 70%
+			&-item
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 48%
+				margin-bottom: 70px
+				padding-right: 30px
+				h3
+					font-size: 22px
+					line-height: 110%
+					font-weight: 600
+					margin-bottom: 10px
+				p
+					font-size: 16px
+					line-height: 20px
+
+				img
+					margin-right: 20px
+					max-width: 50px
+		&-right
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			width: 30%
+			background-color: $accent
+			padding: 35px 30px
+			border-radius: 10px
+			h3
+				font-size: 32px
+				line-height: 110%
+				margin-bottom: 35px
+			form
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				input
+					width: 100%
+					display: flex
+					height: 45px
+					width: 100%
+					margin-bottom: 25px
+				input.button
+					height: 50px
+				small
+					font-size: 10px
+					text-align: center
+					width: 100%
+
+.about
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	padding: 0
+	margin-top: -50px
+	&-left
+		background-color: $accent
+		display: flex
+		padding: 50px 
+		width: 50%
+		justify-content: flex-end
+		&-wrap
+			display: block
+			width: calc(1020px / 2)
+			h2
+				margin-bottom: 50px
+				display: block
+			p
+				font-size: 16px
+				line-height: 20px
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+	&-right
+		height: calc(494px + 100px)
+		width: 50%
+		background-image: url(../img/bg-feat.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+.services
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		&-item
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			padding-top: 70px
+			h3
+				padding: 0px 40px 30px 40px
+				font-size: 26px
+				line-height: 28px
+			p
+				font-size: 16px
+				line-height: 20px
+				padding: 0 40px 20px 40px
+			a.button
+				margin: 15px 40px
+				width: 290px
+				height: 50px
+
+.price
+	background-image: url(../img/bg-price.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	height: 700px
+	display: flex
+	align-items: center
+	&-wrap
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin-bottom: 70px
+		color: #ffffff
+		h2
+			font-size: 36px
+			line-height: 38px
+		span
+			display: flex
+			width: 310px
+			height: 50px
+		p
+			font-size: 24px
+			font-weight: 600
+			line-height: 28px
+			margin: 40px 0
+		div
+			display: block
+			width: 46%
+
+.sertif
+	padding-top: 0
+	margin-top: -50px
+	.title
+		margin-bottom: 70px
+	&-wrap
+		img
+			padding: 0 30px
+			&:focus
+				outline: none
+		.slick-arrow
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			background-color: $main
+			border-radius: 100%
+			height: 30px
+			width: 30px
+			padding: 0
+			margin: 0
+			font-size: 0
+			background-image: url(../img/icons/arrow.svg)
+			background-repeat: no-repeat
+			background-size: 50%
+			background-position: 57% 53%
+			z-index: 5
+			cursor: pointer
+			
+		.slick-next
+			right: -20px
+		.slick-prev
+			left: -20px
+			transform: translateY(-50%) rotate(180deg)
+			background-position: 60% 45%
+	
+.algo
+	.title
+		margin-bottom: 50px
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: flex-start
+		&-item
+			display: block
+			width: 31%
+			margin: 1%
+			margin-bottom: 20px
+			border-radius: 10px
+			box-shadow: -1px 3px 49px rgba(156, 156, 156, 0.1)
+			background-color: #fff
+			padding: 15px
+			img
+				max-width: 60px
+			h3
+				font-size: 22px
+				margin: 10px 0 20px 0
+				font-weight: 600
+			p
+				font-size: 16px 
+				line-height: 22px
+			div
+				border: 1px solid #f6f5f5
+				padding: 15px
+
+.footer-text
+	.title
+		max-width: 700px
+		margin-bottom: 50px
+	&-wrap
+		p
+			font-size: 16px
+			line-height: 20px
+			margin-bottom: 20px
+.burger
+	display: none
+.footer
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	height: 520px
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+	&-wrap
+		border-radius: 10px
+		padding: 40px
+		box-shadow: -1px 3px 49px rgba(156, 156, 156, 0.1)
+		background-color: rgba($main, .8)
+		color: #ffffff
+		max-width: 700px
+		z-index: 10
+		h2
+			font-size: 24px
+			line-height: 26px
+			margin-bottom: 40px
+		&-wrapper
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-start
+			&-item
+				display: block
+				width: 47%
+				margin-bottom: 40px
+				p
+					margin-bottom: 10px
+				a
+					color: #ffffff
+					text-decoration: underline
+					&:hover
+						color: $light
+
+
+
+
+
+
+
+@import "media1200"
+@import "media992"
+@import "media768"
+@import "media578"
+
+
+
+
+
